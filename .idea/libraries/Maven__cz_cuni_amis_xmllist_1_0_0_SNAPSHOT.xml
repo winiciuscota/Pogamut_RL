@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: cz.cuni.amis:xmllist:1.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/xmllist/1.0.0-SNAPSHOT/xmllist-1.0.0-20110217.113756-6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/xmllist/1.0.0-SNAPSHOT/xmllist-1.0.0-20110217.113756-6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/xmllist/1.0.0-SNAPSHOT/xmllist-1.0.0-20110217.113756-6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

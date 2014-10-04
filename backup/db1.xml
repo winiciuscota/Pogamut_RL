@@ -1,0 +1,566 @@
+<list>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-89.071915</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.InventorySpot48</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-3.8970003</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.PathNode103</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint>
+      <token serialization="custom">
+        <cz.cuni.amis.utils.token.Token>
+          <default>
+            <name>DM-TrainingDay.PlayerStart19</name>
+          </default>
+        </cz.cuni.amis.utils.token.Token>
+      </token>
+      <isLong>false</isLong>
+      <isDouble>false</isDouble>
+    </NavPoint>
+    <PreviousPosition reference="../NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-84.21552</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-4.2480006</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.InventorySpot49</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-10.606518</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.36</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.InventorySpot56</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-1.7892001</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.InventorySpot50</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.3024</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.InventorySpot52</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.0981</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[2]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint>
+      <token serialization="custom">
+        <cz.cuni.amis.utils.token.Token>
+          <default>
+            <name>DM-TrainingDay.InventorySpot47</name>
+          </default>
+        </cz.cuni.amis.utils.token.Token>
+      </token>
+      <isLong>false</isLong>
+      <isDouble>false</isDouble>
+    </NavPoint>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-34.467514</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.PlayerStart21</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.45000002</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[4]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[4]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[4]/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-212.287</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.PathNode84</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-8.070298</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[4]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[5]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[4]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-263.4113</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[5]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-6.901845</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.InventorySpot60</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[6]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[5]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-22.402685</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[6]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.570861</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.InventorySpot61</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[7]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[6]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-2.986083</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.InventorySpot62</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.1143</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[7]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[8]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[7]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-22.449982</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.PlayerStart20</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-1.4837309</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[8]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[9]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[8]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-18.197939</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[9]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-1.7411581</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.PlayerStart18</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[10]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[9]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-1.8716202</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[10]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.45000002</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.InventorySpot55</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[11]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[10]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.45000002</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.InventorySpot46</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>0.0</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[11]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[12]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[11]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.45000002</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[3]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>0.0</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[12]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[13]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[12]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.9477</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>0.0</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[13]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[3]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[13]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-10.230471</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.45000002</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[4]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.76185006</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[4]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[2]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-6.1002026</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.InventorySpot43</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.1962</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.InventorySpot45</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.09</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[4]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.45882902</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[2]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[4]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[4]/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-6.1524024</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[4]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.27</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[17]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.27</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.InventorySpot51</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[17]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[4]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.49050003</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[4]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>0.0</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[17]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>0.0</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.InventorySpot44</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[17]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[2]/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[17]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+  <Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+    <availableActions>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>-0.3105</QValue>
+        <NavPoint reference="../../../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[17]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+      <Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+        <QValue>0.0</QValue>
+        <NavPoint>
+          <token serialization="custom">
+            <cz.cuni.amis.utils.token.Token>
+              <default>
+                <name>DM-TrainingDay.PlayerStart24</name>
+              </default>
+            </cz.cuni.amis.utils.token.Token>
+          </token>
+          <isLong>false</isLong>
+          <isDouble>false</isDouble>
+        </NavPoint>
+      </Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint>
+    </availableActions>
+    <EnemiesCount>0</EnemiesCount>
+    <NavPoint reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[18]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint[3]/NavPoint"/>
+    <PreviousPosition reference="../../Univale.Tcc.RL.Pogamut.DecisionMaking.GameState[17]/availableActions/Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint/NavPoint"/>
+    <HealthLow>false</HealthLow>
+  </Univale.Tcc.RL.Pogamut.DecisionMaking.GameState>
+</list>

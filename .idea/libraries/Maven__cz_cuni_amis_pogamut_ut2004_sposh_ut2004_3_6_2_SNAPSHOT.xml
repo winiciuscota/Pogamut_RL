@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: cz.cuni.amis.pogamut.ut2004:sposh-ut2004:3.6.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/pogamut/ut2004/sposh-ut2004/3.6.2-SNAPSHOT/sposh-ut2004-3.6.2-20140814.020422-32.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/pogamut/ut2004/sposh-ut2004/3.6.2-SNAPSHOT/sposh-ut2004-3.6.2-20140814.020422-32-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/pogamut/ut2004/sposh-ut2004/3.6.2-SNAPSHOT/sposh-ut2004-3.6.2-20140814.020422-32-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
