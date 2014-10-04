@@ -11,6 +11,8 @@ At each logic iteration the bot translates the environment into a game state, th
 agent which adds the state into the policy's states vector
 the bot also has events that capture penalty and reward situations, which the agent uses to update the policy
 The agent's policy maps states into actions, at each iteration the agent will return a action to the bot
+when the bot is closed he saves the policy into an xml file
+
 The state is built from:
 
 EnemiesCount - amount of visible enemies
