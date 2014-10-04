@@ -1,66 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b39b247-09c2-47b4-b44b-d848be908d3f" name="Default" comment="recompenças e penalidades pelos eventos playerDamaged e pickedItem">
-      <change type="DELETED" beforePath="C:\Users\winicius\Dropbox\Faculdade\TCC\AI_Learning_Pogamut\src\main\resources\hibernate.cfg.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/Actions/Action.java" afterPath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/Actions/Action.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/Actions/ActionEngage.java" afterPath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/Actions/ActionEngage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/Actions/ActionNavPoint.java" afterPath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/Actions/ActionNavPoint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/DecisionMaking/GameState.java" afterPath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/DecisionMaking/GameState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/Services/GameStateFactory.java" afterPath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/Services/GameStateFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Univale/Tcc/RL/Pogamut/DecisionMaking/GameStateTest.groovy" afterPath="$PROJECT_DIR$/src/test/java/Univale/Tcc/RL/Pogamut/DecisionMaking/GameStateTest.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LearnerBot.iml" afterPath="$PROJECT_DIR$/LearnerBot.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LearnerBot.ipr" afterPath="$PROJECT_DIR$/LearnerBot.ipr" />
+    <list default="true" id="0b39b247-09c2-47b4-b44b-d848be908d3f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LearnerBot.iws" afterPath="$PROJECT_DIR$/LearnerBot.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/LearnerBot.java" afterPath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/LearnerBot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/DecisionMaking/LearningAgent.java" afterPath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/DecisionMaking/LearningAgent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/LearningAgentTest.java" afterPath="$PROJECT_DIR$/src/test/java/LearningAgentTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_assisted_inject_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_assisted_inject_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_multibindings_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_multibindings_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_script_jython_engine_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_script_jython_engine_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_afsm_1_0_1_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_afsm_1_0_1_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_amis_path_finding_3_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_amis_path_finding_3_6_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_amis_utils_3_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_amis_utils_3_6_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_introspection_1_0_0_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_introspection_1_0_0_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_javageom_3_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_javageom_3_6_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_pogamut_pogamut_base_3_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_pogamut_pogamut_base_3_6_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_pogamut_pogamut_unreal_3_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_pogamut_pogamut_unreal_3_6_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_pogamut_pogamut_ut2004_3_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_pogamut_pogamut_ut2004_3_6_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_pogamut_ut2004_sposh_ut2004_3_6_2_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_pogamut_ut2004_sposh_ut2004_3_6_2_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_sposh_core_3_6_2_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_sposh_core_3_6_2_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_xmllist_1_0_0_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cz_cuni_amis_xmllist_1_0_0_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_vecmath_vecmath_1_5_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_vecmath_vecmath_1_5_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_8_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_8_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_saxon_saxon_9_1_0_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_saxon_saxon_9_1_0_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_trax_1_8_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_trax_1_8_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_easymock_easymock_2_5_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_easymock_easymock_2_5_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jython_jython_1_2007.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jython_jython_1_2007.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/PogamutPlatformCustom.properties" afterPath="$PROJECT_DIR$/src/main/resources/PogamutPlatformCustom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/Services/StuckDetector.java" afterPath="$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/Services/StuckDetector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.xml" afterPath="$PROJECT_DIR$/db.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backup/db1.xml" afterPath="$PROJECT_DIR$/backup/db1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backup/db2.xml" afterPath="$PROJECT_DIR$/backup/db2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hs_err_pid7264.log" afterPath="$PROJECT_DIR$/hs_err_pid7264.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenseheader.txt" afterPath="$PROJECT_DIR$/licenseheader.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/main.iml" afterPath="$PROJECT_DIR$/src/main/main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LearnerBot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -162,8 +104,8 @@
       <file leaf-file-name="LearnerBot.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/LearnerBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7504587" vertical-offset="2209" max-vertical-offset="3009">
-              <caret line="179" column="35" selection-start-line="179" selection-start-column="35" selection-end-line="179" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.65688074" vertical-offset="2209" max-vertical-offset="3009">
+              <caret line="176" column="50" selection-start-line="176" selection-start-column="50" selection-end-line="176" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -665,11 +607,16 @@
       <created>1411139438508</created>
       <updated>1411139438508</updated>
     </task>
+    <task id="LOCAL-00001" summary="recompenças e penalidades pelos eventos playerDamaged e pickedItem">
+      <created>1412402608871</created>
+      <updated>1412402608871</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="1040" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -687,7 +634,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3114887" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3114887" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32223415" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1134,8 +1081,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Univale/Tcc/RL/Pogamut/LearnerBot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7504587" vertical-offset="2209" max-vertical-offset="3009">
-          <caret line="179" column="35" selection-start-line="179" selection-start-column="35" selection-end-line="179" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.65688074" vertical-offset="2209" max-vertical-offset="3009">
+          <caret line="176" column="50" selection-start-line="176" selection-start-column="50" selection-end-line="176" selection-end-column="50" />
           <folding />
         </state>
       </provider>
