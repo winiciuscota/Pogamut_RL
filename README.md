@@ -8,8 +8,8 @@ This is supposed to be a school project, im trying to implement the QLearning al
 the Strategy is:
 
 At each logic iteration the bot translates the environment into a game state, the state is fed into the 
-agent which adds the state into the policy's states vector
-the bot also has events that capture penalty and reward situations, which the agent uses to update the policy
+agent which adds the state into the policy's states vector.
+the bot also has events that capture penalty and reward situations, which the agent uses to update the policy.
 The agent's policy maps states into actions, at each iteration the agent will return a action to the bot
 when the bot is closed he saves the policy into an xml file
 
@@ -28,13 +28,13 @@ I believe that the NavPoints are the most efficient way to store info about map 
 
 the bot receives rewards from:
 
-killing an enemy
-damaging an enemy
+killing an enemy,
+damaging an enemy,
 picking up items
 
 and receives penalties from:
 
-getting damaged
+getting damaged,
 being killed
 
 So far the bot doesnt seems to be getting any smarter, i believe that a lot of tweaking on the reward/penalty strategy
