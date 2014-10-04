@@ -39,16 +39,12 @@ public class LearnerBot extends UT2004BotModuleController<UT2004Bot>
     @JProp
     public int deaths = 0;
 
-    //alvo que esta engajando
-    private Player enemy;
     private LearningAgent Agent;
-    private UT2004PathAutoFixer autoFixer;
 
     private Map<UnrealId, NavPoint> navDict;
     private Action Action;
     private GameState CurrentState;
     private StuckDetector StuckDetector;
-    private Random Random;
     private GameStateFactory GameStateFactory;
 
     IWorldEventListener<BotDamaged> botDamagedListener = new IWorldEventListener<BotDamaged>() {
@@ -115,8 +111,6 @@ public class LearnerBot extends UT2004BotModuleController<UT2004Bot>
 
         Agent = new LearningAgent(); //iniciliza o algoritmo de aprendizagem
 
-        Random = new Random();
-
         CurrentState = null;
 
         Action = null;
@@ -148,7 +142,6 @@ public class LearnerBot extends UT2004BotModuleController<UT2004Bot>
     protected void reset()
     {
         log.info(" warning - RESET");
-        //navigation = new UT2004Navigation(bot, info, move);
         CurrentState = null;
     }
 
