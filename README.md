@@ -28,21 +28,20 @@ I believe that the NavPoints are the most efficient way to store info about map 
 
 the bot receives rewards from:
 
-killing an enemy,
-damaging an enemy,
-picking up items
+killing an enemy - +2,
+damaging an enemy - +1,
+picking up items - +1
 
 and receives penalties from:
 
-getting damaged,
-being killed
+getting damaged - -1,
+being killed- -1
 
 So far the bot doesnt seems to be getting any smarter, i believe that a lot of tweaking on the reward/penalty strategy
 and on the update function will solve this problem.
-I believe it is possible to make the bot learn tatics related to the map using this strategy, but to keep realistic expectations
-my goal is to make the bot learn an efficient route to collect itens. 
-the bot starts moving randomly(like a drunk ant) if his movement on the map gradually gets more efficient
-i think it will nice way to prove that he is actually learning. As a consequence, his survivability 
+I believe it is possible to make the bot learn tatics related to the map using this strategy, but to keep realistic expectations my goal is to make the bot learn an efficient route to collect itens. 
+The bot starts moving randomly(like a drunk ant), if his movement on the map gradually gets more efficient
+i think it will be a nice way to prove that he is actually learning. As a consequence, his survivability 
 will also increase since picking up itens makes a huge difference on ut2004.
 Any criticism is very much appreciated.
 
