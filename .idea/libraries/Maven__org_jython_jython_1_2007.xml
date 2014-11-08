@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jython:jython:1.2007">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jython/jython/1.2007/jython-1.2007.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jython/jython/1.2007/jython-1.2007-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jython/jython/1.2007/jython-1.2007-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

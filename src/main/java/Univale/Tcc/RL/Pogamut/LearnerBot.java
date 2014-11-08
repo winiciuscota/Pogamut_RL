@@ -10,6 +10,7 @@ import cz.cuni.amis.pogamut.unreal.communication.messages.UnrealId;
 import cz.cuni.amis.pogamut.ut2004.agent.navigation.UT2004PathAutoFixer;
 import cz.cuni.amis.pogamut.ut2004.bot.impl.UT2004Bot;
 import cz.cuni.amis.pogamut.ut2004.bot.impl.UT2004BotModuleController;
+import cz.cuni.amis.pogamut.ut2004.communication.messages.ItemType;
 import cz.cuni.amis.pogamut.ut2004.communication.messages.UT2004ItemType;
 import cz.cuni.amis.pogamut.ut2004.communication.messages.gbcommands.Initialize;
 import cz.cuni.amis.pogamut.ut2004.communication.messages.gbinfomessages.*;
@@ -54,8 +55,8 @@ public class LearnerBot extends UT2004BotModuleController<UT2004Bot>
             log.info("bot has been damaged");
             //penalidade
             GameState state = GameStateFactory.getGameState(getWorldView());
-            //
-            Agent.update(CurrentState, Action, state, 1);
+
+            Agent.update(CurrentState, Action, state, -1);
         }
     };
 
@@ -75,7 +76,9 @@ public class LearnerBot extends UT2004BotModuleController<UT2004Bot>
         //recompença
         if(navDict != null) {
             GameState state = GameStateFactory.getGameState(getWorldView());
-            Agent.update(CurrentState, Action, state, 1);
+            if(event.getType().getCategory().equals(ItemType.Category.WEAPON))
+                Agent.update(CurrentState, Action, state, 5);
+
         }
     }
 
@@ -101,6 +104,7 @@ public class LearnerBot extends UT2004BotModuleController<UT2004Bot>
         deaths++;
         //penalidade
         GameState state = GameStateFactory.getGameState(getWorldView());
+
         Agent.update(CurrentState, Action, state, -2);
     }
 
@@ -161,7 +165,7 @@ public class LearnerBot extends UT2004BotModuleController<UT2004Bot>
         if(!newState.equals(CurrentState)) {
 
 
-            float newQValue = Agent.update(CurrentState, Action, newState, -0.1);
+            float newQValue = Agent.update(CurrentState, Action, newState, 0);
 
             log.info("qValue adjustment is " + newQValue);
             Action newAction = Agent.getAction(newState);
@@ -188,7 +192,6 @@ public class LearnerBot extends UT2004BotModuleController<UT2004Bot>
     //inicializa o(s) bot(s)
     public static void main(String args[]) throws PogamutException
     {
-
         new UT2004BotRunner(LearnerBot.class, "Learner").setMain(true).setLogLevel(Level.INFO).startAgents(1);
     }
 

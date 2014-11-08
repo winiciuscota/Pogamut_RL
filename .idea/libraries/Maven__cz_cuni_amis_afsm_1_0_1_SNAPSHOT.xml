@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: cz.cuni.amis:afsm:1.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/afsm/1.0.1-SNAPSHOT/afsm-1.0.1-20141015.010300-1156.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/afsm/1.0.1-SNAPSHOT/afsm-1.0.1-20141015.010300-1156-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/afsm/1.0.1-SNAPSHOT/afsm-1.0.1-20141015.010300-1156-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

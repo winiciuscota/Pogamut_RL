@@ -10,7 +10,7 @@ import java.util.List;
  * @author winicius
  */
 public class Action {
-    private float QValue;
+    private double QValue;
 
 
     public Action(){
@@ -18,17 +18,19 @@ public class Action {
     }
 
 
-    public float getQValue() {
+    public double getQValue() {
         return QValue;
     }
 
-    public void setQValue(float QValue) {
+    public void setQValue(double QValue) {
         this.QValue = QValue;
     }
 
+    //public void updateQValue(float QValueAdjustment, double alpha) {
     public void updateQValue(float QValueAdjustment) {
-        float oldQValue = getQValue();
-        float newQValue = oldQValue + QValueAdjustment;
+        double oldQValue = getQValue();
+        //double newQValue = ((1 - alpha) * oldQValue + QValueAdjustment);
+        double newQValue = (oldQValue + QValueAdjustment);
         setQValue(newQValue);
     }
 }

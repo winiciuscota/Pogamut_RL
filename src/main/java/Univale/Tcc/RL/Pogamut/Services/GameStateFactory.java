@@ -8,7 +8,6 @@ import Univale.Tcc.RL.Pogamut.DecisionMaking.GameState;
 import cz.cuni.amis.pogamut.base.utils.math.DistanceUtils;
 import cz.cuni.amis.pogamut.base3d.worldview.IVisionWorldView;
 import cz.cuni.amis.pogamut.base3d.worldview.object.Location;
-import cz.cuni.amis.pogamut.unreal.communication.messages.UnrealId;
 import cz.cuni.amis.pogamut.ut2004.agent.module.sensor.AgentInfo;
 import cz.cuni.amis.pogamut.ut2004.agent.module.sensor.Players;
 import cz.cuni.amis.pogamut.ut2004.communication.messages.gbinfomessages.NavPoint;
@@ -36,12 +35,12 @@ public class GameStateFactory {
     {
 
         GameState result = new GameState();
-        result.setPreviousPosition(currentPosition.getId());
+        result.setPreviousPosition(currentPosition.getId().toString());
         result.setEnemiesCount(players.getVisibleEnemies().size());
         result.setHealthLow(agentInfo.getHealth() < 60);
 
         NavPoint navPoint = agentInfo.getNearestNavPoint();
-        result.setNavPoint(navPoint.getId());
+        result.setBotPosition(navPoint.getId().toString());
         currentPosition = navPoint;
 
         List<Action> actions = navPoint.getOutgoingEdges().values().
@@ -55,7 +54,7 @@ public class GameStateFactory {
 
             Location location = players.getNearestEnemy(2000).getLocation();
             NavPoint enemyNav = DistanceUtils.getNearest(wordView.getAll(NavPoint.class).values(), location);
-            result.setNearestEnemyPosition(enemyNav.getId());
+            result.setNearestEnemyPosition(enemyNav.getId().toString());
         }
         result.setAvailableActions(actions);
         return result;

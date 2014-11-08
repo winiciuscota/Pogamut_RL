@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: cz.cuni.amis:sposh-core:3.6.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/sposh-core/3.6.2-SNAPSHOT/sposh-core-3.6.2-20141015.011316-52.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/sposh-core/3.6.2-SNAPSHOT/sposh-core-3.6.2-20141015.011316-52-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/sposh-core/3.6.2-SNAPSHOT/sposh-core-3.6.2-20141015.011316-52-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,17 +1,15 @@
 package Univale.Tcc.RL.Pogamut.DecisionMaking;
 
-import cz.cuni.amis.pogamut.unreal.communication.messages.UnrealId;
 import Univale.Tcc.RL.Pogamut.Actions.*;
 
 import java.util.List;
+import java.util.Optional;
 
 
 /**
- *
  * @author winicius
  */
-public final class GameState{
-
+public final class GameState {
 
 
     private List<Action> availableActions;
@@ -21,127 +19,109 @@ public final class GameState{
     private int EnemiesCount;
 
     //Navpoint mais proximo do bot
-    private UnrealId NavPoint;
+    private String BotPosition;
 
     //id no navpoint anterior
     //isso é fundamental para determinar o proximo movimento
     //se o bot estava vindo do sul então ele pode concluir que ja coletou os itens daquela direção
     //e mover para uma localização menos explorada
-    private UnrealId PreviousPosition;
+    private String PreviousPosition;
 
     //a saude esta baixa?
 
-    public UnrealId getPreviousPosition() {
+    public String getPreviousPosition() {
         return PreviousPosition;
     }
 
-    public void setPreviousPosition(UnrealId previousPosition) {
+    public void setPreviousPosition(String previousPosition) {
         PreviousPosition = previousPosition;
     }
 
     private boolean HealthLow;
-    
+
     //estado sendo executado no momento
-    private Action Action;
 
-    private UnrealId NearestEnemyPosition;
+    private String NearestEnemyPosition;
 
-    public UnrealId getNearestEnemyPosition() {
+    public String getNearestEnemyPosition() {
         return NearestEnemyPosition;
     }
 
-    public void setNearestEnemyPosition(UnrealId nearestEnemyPosition) {
+    public void setNearestEnemyPosition(String nearestEnemyPosition) {
         NearestEnemyPosition = nearestEnemyPosition;
     }
 
-    public GameState()
-    {        
-    }
-    
-    public GameState(int enemiesCount, boolean healthLow, Action action)
-    {
-        setEnemiesCount(enemiesCount);
-        setHealthLow(healthLow);
-        setAction(action);
-    }
-
     @Override
-    public boolean equals(Object other){
+    public boolean equals(Object other) {
         if (other == null) return false;
         if (other == this) return true;
-        if (!(other instanceof GameState))return false;
-        
-        GameState otherState = (GameState)other;
-        
-        return this.getEnemiesCount() == otherState.getEnemiesCount()
-                && this.getNearestEnemyPosition() == otherState.getNearestEnemyPosition()
-                && this.isHealthLow() == otherState.isHealthLow()
-                && this.getPreviousPosition() == otherState.getPreviousPosition()
-                && this.getNavPoint() == otherState.getNavPoint();
+        if (!(other instanceof GameState)) return false;
 
+        GameState otherState = (GameState) other;
+
+        return this.getEnemiesCount() == otherState.getEnemiesCount()
+                && this.getNearestEnemyPosition().equals(otherState.getNearestEnemyPosition())
+                && this.isHealthLow() == otherState.isHealthLow()
+                && this.getPreviousPosition().equals(otherState.getPreviousPosition())
+                && this.getBotPosition().equals(otherState.getBotPosition());
+//        return true;
     }
 
     /**
      * @return the enemiesCount
      */
-    public int getEnemiesCount()
-    {
+    public int getEnemiesCount() {
         return EnemiesCount;
     }
 
     /**
      * @param enemiesCount the enemiesCount to set
      */
-    public void setEnemiesCount(int enemiesCount)
-    {
-        this.EnemiesCount = (enemiesCount > 3 || enemiesCount < 0)? 3 : enemiesCount;
+    public void setEnemiesCount(int enemiesCount) {
+        this.EnemiesCount = (enemiesCount > 3 || enemiesCount < 0) ? 3 : enemiesCount;
     }
 
 
     /**
      * @return the healthLow
      */
-    public boolean isHealthLow()
-    {
+    public boolean isHealthLow() {
         return HealthLow;
     }
 
     /**
      * @param healthLow the healthLow to set
      */
-    public void setHealthLow(boolean healthLow)
-    {
+    public void setHealthLow(boolean healthLow) {
         this.HealthLow = healthLow;
     }
 
     /**
      * @return the action
      */
-    public Action getAction()
-    {
-        return Action;
+    public Action getAction(Action action) throws ActionNotFoundException {
+
+
+        Optional<Action> result = availableActions.stream().filter(a -> a.equals(action)).findFirst();
+
+        if (!result.isPresent())
+            throw new ActionNotFoundException("");
+        return result.get();
     }
 
-    /**
-     * @param action the action to set
-     */
-    public void setAction(Action action)
-    {
-        this.Action = action;
-    }
 
     /**
      * @return the NavPoint
      */
-    public UnrealId getNavPoint() {
-        return NavPoint;
+    public String getBotPosition() {
+        return BotPosition;
     }
 
     /**
-     * @param NavPoint the NavPoint to set
+     * @param BotPosition the NavPoint to set
      */
-    public void setNavPoint(UnrealId NavPoint) {
-        this.NavPoint = NavPoint;
+    public void setBotPosition(String botPosition) {
+        this.BotPosition = botPosition;
     }
 
     public List<Action> getAvailableActions() {
@@ -155,17 +135,17 @@ public final class GameState{
     /**
      * @return the qValue
      */
-    public double getqValue()
-    {
-        return getAvailableActions().stream().map(action -> action.getQValue()).max(Float::compareTo).orElse(0f);
+    public double getqValue() {
+        return getAvailableActions().stream().map(action -> action.getQValue()).max(Double::compareTo).orElse(0d);
     }
 
 
-    public void updateActionQValue(Action action, float qValueAdjustment) throws ActionNotFoundException
-    {
-        if(!availableActions.contains(action))
+    //public void updateActionQValue(Action action, float qValueAdjustment, double alpha) throws ActionNotFoundException
+    public void updateActionQValue(Action action, float qValueAdjustment) throws ActionNotFoundException {
+        if (!availableActions.contains(action))
             throw new ActionNotFoundException("action not found on the available actions list");
 
+        //availableActions.get(availableActions.indexOf(action)).updateQValue(qValueAdjustment, alpha);
         availableActions.get(availableActions.indexOf(action)).updateQValue(qValueAdjustment);
 
     }
@@ -175,5 +155,11 @@ public final class GameState{
             super(message);
         }
     }
-    
+
+    public GameState()
+    {
+        setNearestEnemyPosition("");
+        setBotPosition("");
+        setPreviousPosition("");
+    }
 }
