@@ -1,9 +1,9 @@
 package Univale.Tcc.RL.Pogamut;
 
-import Univale.Tcc.RL.Pogamut.Actions.Action;
 import Univale.Tcc.RL.Pogamut.DecisionMaking.Agent.LearningAgent;
 import Univale.Tcc.RL.Pogamut.DecisionMaking.GameState.GameState;
 import Univale.Tcc.RL.Pogamut.Services.GameStateFactory.GameStateFactory;
+import Univale.Tcc.RL.Pogamut.Services.Statistics.Statistics;
 import Univale.Tcc.RL.Pogamut.Services.StuckDetector.StuckDetector;
 import cz.cuni.amis.introspection.java.JProp;
 import cz.cuni.amis.pogamut.base.communication.worldview.event.IWorldEventListener;
@@ -38,6 +38,7 @@ public class LearnerBase extends UT2004BotModuleController<UT2004Bot> {
     protected GameState CurrentState;
     protected Univale.Tcc.RL.Pogamut.Services.StuckDetector.StuckDetector StuckDetector;
     protected Univale.Tcc.RL.Pogamut.Services.GameStateFactory.GameStateFactory GameStateFactory;
+    protected Statistics statistics;
 
     IWorldEventListener<BotDamaged> botDamagedListener = new IWorldEventListener<BotDamaged>() {
 
@@ -45,9 +46,11 @@ public class LearnerBase extends UT2004BotModuleController<UT2004Bot> {
         public void notify(BotDamaged event) {
             log.info("bot has been damaged");
             //penalidade
-            GameState state = GameStateFactory.getGameState(getWorldView());
+            Double reward = -1d;
 
-            Agent.update(CurrentState, Action, state, -1);
+            GameState state = GameStateFactory.getGameState(getWorldView());
+            Agent.update(CurrentState, Action, state, reward);
+            statistics.registerReward(reward);
         }
     };
 
@@ -56,8 +59,11 @@ public class LearnerBase extends UT2004BotModuleController<UT2004Bot> {
     {
         log.info("bot damaged an enemy");
         //recompença
+        Double reward = 1d;
+
         GameState state = GameStateFactory.getGameState(getWorldView());
-        Agent.update(CurrentState, Action, state, 1);
+        Agent.update(CurrentState, Action, state, reward);
+        statistics.registerReward(reward);
     }
 
     @EventListener(eventClass = ItemPickedUp.class)
@@ -67,9 +73,11 @@ public class LearnerBase extends UT2004BotModuleController<UT2004Bot> {
         //recompença
         if(navDict != null) {
             GameState state = GameStateFactory.getGameState(getWorldView());
-            if(event.getType().getCategory().equals(ItemType.Category.WEAPON))
-                Agent.update(CurrentState, Action, state, 5);
-
+            if(event.getType().getCategory().equals(ItemType.Category.WEAPON)) {
+                Double reward = 5d;
+                Agent.update(CurrentState, Action, state, reward);
+                statistics.registerReward(reward);
+            }
         }
     }
 
@@ -82,8 +90,11 @@ public class LearnerBase extends UT2004BotModuleController<UT2004Bot> {
             log.info("bot killed an enemy");
             frags++;
             //recompença
+            Double reward = 2d;
+
             GameState state = GameStateFactory.getGameState(getWorldView());
-            Agent.update(CurrentState, Action, state, 2);
+            Agent.update(CurrentState, Action, state, reward);
+            statistics.registerReward(reward);
         }
     }
 
@@ -94,9 +105,11 @@ public class LearnerBase extends UT2004BotModuleController<UT2004Bot> {
         log.info("bot was killed");
         deaths++;
         //penalidade
-        GameState state = GameStateFactory.getGameState(getWorldView());
+        Double reward = -2d;
 
-        Agent.update(CurrentState, Action, state, -2);
+        GameState state = GameStateFactory.getGameState(getWorldView());
+        Agent.update(CurrentState, Action, state, reward);
+        statistics.registerReward(reward);
     }
 
     @Override
@@ -111,6 +124,8 @@ public class LearnerBase extends UT2004BotModuleController<UT2004Bot> {
         Action = null;
 
         getWorldView().addEventListener(BotDamaged.class, botDamagedListener);
+
+        statistics = new Statistics();
     }
 
     @Override
@@ -131,6 +146,7 @@ public class LearnerBase extends UT2004BotModuleController<UT2004Bot> {
     public void botShutdown() {
         log.info("bot destroyed, saving knowledge");
         Agent.Save();
+        statistics.SaveStatistics();
     }
 
     //reseta a situação do bot

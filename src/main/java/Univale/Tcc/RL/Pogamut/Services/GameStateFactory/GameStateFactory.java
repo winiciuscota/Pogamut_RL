@@ -4,7 +4,7 @@ package Univale.Tcc.RL.Pogamut.Services.GameStateFactory;
 import Univale.Tcc.RL.Pogamut.Actions.Action;
 import Univale.Tcc.RL.Pogamut.Actions.ActionEngage;
 import Univale.Tcc.RL.Pogamut.Actions.ActionNavPoint;
-import Univale.Tcc.RL.Pogamut.DecisionMaking.GameState;
+import Univale.Tcc.RL.Pogamut.DecisionMaking.GameState.GameState;
 import cz.cuni.amis.pogamut.base.utils.math.DistanceUtils;
 import cz.cuni.amis.pogamut.base3d.worldview.IVisionWorldView;
 import cz.cuni.amis.pogamut.base3d.worldview.object.Location;

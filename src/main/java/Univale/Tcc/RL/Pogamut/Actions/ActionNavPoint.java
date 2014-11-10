@@ -8,17 +8,18 @@ import java.util.List;
  * Created by winicius on 22/08/2014.
  */
 public class ActionNavPoint extends Action{
-    private UnrealId NavPoint;
 
-    public UnrealId getNavPoint() {
+    private String NavPoint;
+
+    public String getNavPoint() {
         return NavPoint;
     }
 
-    public void setNavPoint(UnrealId navPoint) {
+    public void setNavPoint(String navPoint) {
         NavPoint = navPoint;
     }
 
-    public ActionNavPoint(UnrealId navPoint) {
+    public ActionNavPoint(String navPoint) {
         NavPoint = navPoint;
     }
 
