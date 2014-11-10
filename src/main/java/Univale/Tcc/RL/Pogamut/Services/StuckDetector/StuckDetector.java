@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Univale.Tcc.RL.Pogamut.Services;
+package Univale.Tcc.RL.Pogamut.Services.StuckDetector;
 
 import cz.cuni.amis.pogamut.ut2004.agent.module.sensor.AgentInfo;
 import cz.cuni.amis.pogamut.ut2004.agent.navigation.IUT2004Navigation;

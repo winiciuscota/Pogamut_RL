@@ -1,4 +1,4 @@
-package Univale.Tcc.RL.Pogamut.DecisionMaking;
+package Univale.Tcc.RL.Pogamut.DecisionMaking.GameState;
 
 import Univale.Tcc.RL.Pogamut.Actions.*;
 

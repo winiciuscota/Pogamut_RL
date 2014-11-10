@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: cz.cuni.amis:introspection:1.0.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/introspection/1.0.0-SNAPSHOT/introspection-1.0.0-20141015.010351-1263.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/introspection/1.0.0-SNAPSHOT/introspection-1.0.0-20141027.020043-1276.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/introspection/1.0.0-SNAPSHOT/introspection-1.0.0-20141015.010351-1263-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/introspection/1.0.0-SNAPSHOT/introspection-1.0.0-20141027.020043-1276-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/introspection/1.0.0-SNAPSHOT/introspection-1.0.0-20141015.010351-1263-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/cz/cuni/amis/introspection/1.0.0-SNAPSHOT/introspection-1.0.0-20141027.020043-1276-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
