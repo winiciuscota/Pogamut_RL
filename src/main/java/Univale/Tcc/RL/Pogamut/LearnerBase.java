@@ -1,5 +1,7 @@
 package Univale.Tcc.RL.Pogamut;
 
+import Univale.Tcc.RL.Pogamut.Behaviors.Agressive.AssaultBehavior;
+import Univale.Tcc.RL.Pogamut.Behaviors.Navigation.NavigationBehavior;
 import Univale.Tcc.RL.Pogamut.DecisionMaking.Agent.LearningAgent;
 import Univale.Tcc.RL.Pogamut.DecisionMaking.GameState.GameState;
 import Univale.Tcc.RL.Pogamut.Services.GameStateFactory.GameStateFactory;
@@ -39,6 +41,10 @@ public class LearnerBase extends UT2004BotModuleController<UT2004Bot> {
     protected Univale.Tcc.RL.Pogamut.Services.StuckDetector.StuckDetector StuckDetector;
     protected Univale.Tcc.RL.Pogamut.Services.GameStateFactory.GameStateFactory GameStateFactory;
     protected Statistics statistics;
+
+    //behaviors
+    AssaultBehavior assaultbehavior;
+    NavigationBehavior navigationBehavior;
 
     IWorldEventListener<BotDamaged> botDamagedListener = new IWorldEventListener<BotDamaged>() {
 
@@ -126,6 +132,9 @@ public class LearnerBase extends UT2004BotModuleController<UT2004Bot> {
         getWorldView().addEventListener(BotDamaged.class, botDamagedListener);
 
         statistics = new Statistics();
+
+        assaultbehavior = new AssaultBehavior(players, shoot, navigation );
+        navigationBehavior = new NavigationBehavior(shoot, navigation);
     }
 
     @Override

@@ -21,15 +21,6 @@ import Univale.Tcc.RL.Pogamut.DecisionMaking.GameState.GameState;
 public class LearnerBot extends LearnerBase
 {
 
-    AssaultBehavior assaultbehavior;
-    NavigationBehavior navigationBehavior;
-
-    public LearnerBot()
-    {
-        assaultbehavior = new AssaultBehavior(players, shoot, navigation );
-        navigationBehavior = new NavigationBehavior(shoot, navigation);
-    }
-
     @Override
     public void logic()
     {
