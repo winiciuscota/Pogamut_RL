@@ -1,10 +1,10 @@
-package Univale.Tcc.RL.Pogamut;
+package Univale.Tcc.RL.Pogamut.Bot;
 
 //import com.thoughtworks.xstream.XStream;
+
 import Univale.Tcc.RL.Pogamut.Actions.ActionEngage;
-import Univale.Tcc.RL.Pogamut.Behaviors.Abstract.Behavior;
-import Univale.Tcc.RL.Pogamut.Behaviors.Agressive.AssaultBehavior;
-import Univale.Tcc.RL.Pogamut.Behaviors.Navigation.NavigationBehavior;
+import Univale.Tcc.RL.Pogamut.Bot.LearnerBase;
+import Univale.Tcc.RL.Pogamut.DecisionMaking.Agent.IAgent;
 import cz.cuni.amis.pogamut.base.utils.guice.AgentScoped;
 import cz.cuni.amis.pogamut.ut2004.communication.messages.gbinfomessages.*;
 import cz.cuni.amis.pogamut.ut2004.utils.UT2004BotRunner;
@@ -18,23 +18,24 @@ import Univale.Tcc.RL.Pogamut.DecisionMaking.GameState.GameState;
 
 
 @AgentScoped
-public class LearnerBot extends LearnerBase
-{
+public class LearnerBot extends LearnerBase {
+
+    public LearnerBot(IAgent agent)
+    {
+       this.Agent = agent;
+    }
 
     @Override
-    public void logic()
-    {
-
+    public void logic() {
         GameState newState = GameStateFactory.getGameState(getWorldView());
 
         log.log(Level.INFO, "knowledge size is {0}", Agent.getCost());
 
-        if(StuckDetector.check())
-        {
+        if (StuckDetector.check()) {
             reset();
         }
 
-        if(!newState.equals(CurrentState)) {
+        if (!newState.equals(CurrentState)) {
 
 
             float newQValue = Agent.update(CurrentState, Action, newState, 0);
@@ -48,8 +49,7 @@ public class LearnerBot extends LearnerBase
             if (newAction instanceof ActionNavPoint) {
                 NavPoint navPoint = navDict.get(((ActionNavPoint) newAction).getNavPoint());
                 navigationBehavior.BehaviourDrivenMovement(navPoint);
-            }
-            else if (newAction instanceof ActionEngage) {
+            } else if (newAction instanceof ActionEngage) {
                 assaultbehavior.BehaviourDrivenMovement();
             }
 
@@ -59,10 +59,10 @@ public class LearnerBot extends LearnerBase
     }
 
     //inicializa o(s) bot(s)
-    public static void main(String args[]) throws PogamutException
-    {
-        new UT2004BotRunner(LearnerBot.class, "Learner").setMain(true).setLogLevel(Level.INFO).startAgents(1);
-    }
+//    public static void main(String args[]) throws PogamutException {
+//
+//        new UT2004BotRunner(LearnerBot.class, "Learner").setMain(true).setLogLevel(Level.INFO).startAgents(1);
+//    }
 
 
 }

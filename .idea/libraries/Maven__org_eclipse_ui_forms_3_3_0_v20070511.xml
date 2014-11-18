@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.ui:forms:3.3.0-v20070511">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/ui/forms/3.3.0-v20070511/forms-3.3.0-v20070511.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/ui/forms/3.3.0-v20070511/forms-3.3.0-v20070511-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/ui/forms/3.3.0-v20070511/forms-3.3.0-v20070511-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

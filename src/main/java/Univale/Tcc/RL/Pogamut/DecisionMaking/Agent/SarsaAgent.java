@@ -1,11 +1,7 @@
 package Univale.Tcc.RL.Pogamut.DecisionMaking.Agent;
 
 import Univale.Tcc.RL.Pogamut.DecisionMaking.GameState.GameState;
-import com.thoughtworks.xstream.XStream;
-import cz.cuni.amis.introspection.java.JProp;
 
-import java.io.FileInputStream;
-import java.io.PrintWriter;
 import java.util.*;
 
 import Univale.Tcc.RL.Pogamut.Actions.Action;
@@ -13,47 +9,14 @@ import Univale.Tcc.RL.Pogamut.Actions.Action;
 /**
  * @author winicius_2
  */
-public class LearningAgent {
+public class SarsaAgent extends BaseAgent implements IAgent{
 
-    @JProp
-    double epsilon = 0.3;
-    //probabilidade de exploração
+    public SarsaAgent() {
+        super();
+    }
 
-    @JProp
-    double gamma = 0.9;
-    //fator de desconto, determinado o quão preocupado o agente será com recompenas futuras
-
-    @JProp
-    double alpha = 0.9;
-    //taxa de aprendizagem
-
-    Random randomNumberGenerator;
-
-    //lista de todos os estados do jogo - base de conhecimento
-    List<GameState> states;
-
-    final XStream xstream = new XStream();
-
-    public LearningAgent() {
-        FileInputStream file = null;
-        try {
-            file = new FileInputStream("db.xml");
-
-
-            if (file == null)
-                states = new ArrayList<GameState>();
-            else {
-                states = (List<GameState>) (xstream.fromXML(file));
-                file.close();
-                if (states == null) {
-                    states = new ArrayList<GameState>();
-                }
-            }
-        } catch (Exception e) {
-
-        }
-        randomNumberGenerator = new Random();
-
+    public SarsaAgent(double epsilon, double gamma, double alpha) {
+        super(epsilon, gamma, alpha);
     }
 
     //retorna qvalue da ação informada no estado
@@ -80,9 +43,7 @@ public class LearningAgent {
 
         return states.stream().filter(s -> s.equals(state))
                 .findFirst()
-                .get().getAvailableActions().stream()
-                .max((action1, action2) -> Double.compare(action1.getQValue(), action2.getQValue()))
-                .map(action -> action.getQValue());
+                .map(s -> s.getMaximunQValue());
 
     }
 
@@ -128,17 +89,16 @@ public class LearningAgent {
             return 0;
         GameState targetState = states.get(states.indexOf(oldState));
 
-        //calculo do novo qValue
-        //Q(s, a) = Q(s, a) + alpha(r + beta(max(Q(s', a')))
-        double newStateQValue = newState.getqValue();
-        double targetStateQValue = targetState.getqValue();
+        //calculo do novo qValue no algortimo SARSA
+        //Q(s, a) = Q(s, a) + alpha(r + beta(p(Q(s', a')) - Q(s, a))
+        double newStateQValue = getAction(newState).getQValue();//recupera ação de acordo com o comportamento atual
+        double targetStateQValue = getAction(targetState).getQValue();//recupera
         float qValueAdjustment = 0;
-        try {
 
+
+        try {
             qValueAdjustment = (float) (alpha * (reward + (gamma * (newStateQValue - targetStateQValue))));
 
-
-            //targetState.updateActionQValue(chosenAction, qValueAdjustment, alpha);
             targetState.updateActionQValue(chosenAction, qValueAdjustment);
 
         } catch (GameState.ActionNotFoundException e) {
@@ -147,24 +107,7 @@ public class LearningAgent {
         return qValueAdjustment;
     }
 
-    public void Save() {
-        XStream xstream = new XStream();
-        String xml = xstream.toXML(states);
 
 
-        try {
-            PrintWriter writer = new PrintWriter("db.xml", "UTF-8");
-            writer.write(xml);
-            writer.flush();
-            writer.close();
-        } catch (Exception e) {
-
-        }
-
-    }
-
-    public int getCost() {
-        return states.size();
-    }
 
 }

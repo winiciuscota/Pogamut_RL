@@ -4,9 +4,8 @@ import com.thoughtworks.xstream.XStream;
 
 import java.io.FileInputStream;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
+
 
 /**
  * Created by winicius on 09/11/2014.
@@ -32,13 +31,15 @@ public class Statistics {
         this.rewardEvents = rewardEvents;
     }
 
+    static final long ONE_MINUTE_IN_MILLIS = 60000;
     public Statistics()
     {
         setTimer(new Timer());
 
         XStream xstream = new XStream();
         try {
-            FileInputStream file = new FileInputStream("statistics.xml");
+
+            FileInputStream file = new FileInputStream("rewards.xml");
 
             if (file == null)
                 rewardEvents = new ArrayList<RewardEvent>();
@@ -52,7 +53,7 @@ public class Statistics {
 
             }
         } catch (Exception e) {
-
+            rewardEvents = new ArrayList<RewardEvent>();
         }
     }
 
@@ -66,12 +67,21 @@ public class Statistics {
     public void SaveStatistics()
     {
         XStream xstream = new XStream();
-        String xml = xstream.toXML(rewardEvents);
+        String rewardsXml = xstream.toXML(rewardEvents);
 
+        Map<Long, Double> stastics = getStatistics(1);
+        stastics = new TreeMap<Long, Double>(stastics);
+        String statisticsXml = xstream.toXML(stastics);
         try
         {
-            PrintWriter writer = new PrintWriter("statistics.xml", "UTF-8");
-            writer.write(xml);
+            PrintWriter writer = new PrintWriter("rewards.xml", "UTF-8");
+            writer.write(rewardsXml);
+            writer.flush();
+            writer.close();
+
+            writer = new PrintWriter("statistics.xml", "UTF-8");
+
+            writer.write(statisticsXml);
             writer.flush();
             writer.close();
         }
@@ -81,6 +91,21 @@ public class Statistics {
         }
 
         timer.SaveTimeInfo();
+    }
+
+    public Map<Long, Double>  getStatistics(int minutesInterval)
+    {
+        Map<Long, Double> result = new HashMap<Long,Double>();
+
+        long interval = new Date(minutesInterval * ONE_MINUTE_IN_MILLIS).getTime();
+        for(long i = interval; i < getTimer().getTotalElapsedTime() && i < ONE_MINUTE_IN_MILLIS * 300; i += interval )
+        {
+            final long finalI = i;
+            result.put(new Long(i/ONE_MINUTE_IN_MILLIS), new Double(rewardEvents.stream().filter(reward -> reward.getElapsedTime() > finalI - interval &&
+                    reward.getElapsedTime() < finalI).mapToDouble(reward -> reward.getReward()).summaryStatistics().getSum()));
+        }
+
+        return result;
     }
 
 

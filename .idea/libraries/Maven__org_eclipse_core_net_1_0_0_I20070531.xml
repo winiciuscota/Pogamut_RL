@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.core:net:1.0.0-I20070531">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/core/net/1.0.0-I20070531/net-1.0.0-I20070531.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/core/net/1.0.0-I20070531/net-1.0.0-I20070531-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/eclipse/core/net/1.0.0-I20070531/net-1.0.0-I20070531-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

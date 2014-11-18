@@ -135,7 +135,7 @@ public final class GameState {
     /**
      * @return the qValue
      */
-    public double getqValue() {
+    public double getMaximunQValue() {
         return getAvailableActions().stream().map(action -> action.getQValue()).max(Double::compareTo).orElse(0d);
     }
 

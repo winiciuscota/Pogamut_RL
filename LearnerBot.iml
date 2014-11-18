@@ -15,6 +15,39 @@
     <orderEntry type="library" name="Maven: com.thoughtworks.xstream:xstream:1.4.7" level="project" />
     <orderEntry type="library" name="Maven: xmlpull:xmlpull:1.1.3.1" level="project" />
     <orderEntry type="library" name="Maven: xpp3:xpp3_min:1.1.4c" level="project" />
+    <orderEntry type="library" name="Maven: org.jfree:jfreechart:1.0.19" level="project" />
+    <orderEntry type="library" name="Maven: org.jfree:jcommon:1.0.23" level="project" />
+    <orderEntry type="library" name="Maven: com.miglayout:miglayout:3.7.4" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.swt:org.eclipse.swt.win32.win32.x86_64:4.4" level="project" />
+    <orderEntry type="library" name="Maven: jfree:jfreechart-swt:1.0.17" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.ui:ide:3.3.0-I20070620" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.core:resources:3.3.0-v20070604" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.core:expressions:3.3.0-v20070606-0010" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.core:runtime:3.10.0-v20140318-2214" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse:osgi:3.10.0-v20140606-1445" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.equinox:common:3.6.200-v20130402-1505" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.core:jobs:3.6.0-v20140424-0053" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.equinox:registry:3.5.400-v20140428-1507" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.equinox:preferences:3.5.200-v20140224-1527" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.core:contenttype:3.4.200-v20140207-1251" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.equinox:app:1.3.200-v20130910-1609" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.core:filesystem:1.1.0-v20070606" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse:help:3.3.0-v20070524" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse:ui:3.3.0-I20070614-0800" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse:swt:3.3.0-v3346" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse:jface:3.3.0-I20070606-0010" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.core:commands:3.3.0-I20070605-0010" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.ui:workbench:3.3.0-I20070608-1100" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jface:databinding:1.1.0-I20070606-0010" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.core:databinding:1.0.0-I20070606-0010" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.ui:views:3.2.100-I20070319-0010" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.update:configurator:3.2.100-v20070615" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.update:core:3.2.100-v20070615" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.core:net:1.0.0-I20070531" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.update:ui:3.2.100-v20070615" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.ui:forms:3.3.0-v20070511" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jface:text:3.3.0-v20070606-0010" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse:text:3.3.0-v20070606-0010" level="project" />
     <orderEntry type="library" name="Maven: cz.cuni.amis.pogamut.ut2004:sposh-ut2004:3.6.2-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: cz.cuni.amis.pogamut:pogamut-ut2004:3.6.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.ant:ant-trax:1.8.0" level="project" />

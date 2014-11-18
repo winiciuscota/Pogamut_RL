@@ -1,13 +1,10 @@
 package Univale.Tcc.RL.Pogamut.Services.Statistics;
 
-import Univale.Tcc.RL.Pogamut.DecisionMaking.GameState.GameState;
 import com.thoughtworks.xstream.XStream;
 
 import java.io.FileInputStream;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created by winicius on 08/11/2014.
@@ -39,7 +36,7 @@ public class Timer {
             if (file == null)
                 setPreviousElapsedTime(0);
             else {
-                setPreviousElapsedTime((long)xstream.fromXML(file));
+                setPreviousElapsedTime((long) xstream.fromXML(file));
                 file.close();
 
             }
